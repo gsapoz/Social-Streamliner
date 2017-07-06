@@ -15,8 +15,8 @@ Organize, filter, and streamline your social media profiles to sort out and remo
 ## Task List
 - [x] Initialize Xcode Workspace with Cocoapods Dependency Manager
 - [x] Initialize Bridging Header to import UIKit and AlamoFire Libraries 
-- [ ] Integrate Facebook Login SDK to get user profile credentials
-- [ ] Integrate Twitter Kit to utilize Tweet functionality
+- [x] Integrate Facebook Login SDK to get user profile credentials
+- [x] Integrate Twitter Kit to utilize Tweet functionality
 - [ ] Integrate Instagram API to utilize Instagram module
 - [ ] Design and Implement user console with each social media logins
 - [ ] Design and Implement Social Dashboard with each profile feed
