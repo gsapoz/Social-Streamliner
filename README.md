@@ -1,19 +1,21 @@
 # Social-Streamliner
 Organize, filter, and streamline your social media profiles to sort out and remove unwanted tags, embarrassing photos, incriminating tweets, and posts with low activity.
 
-## Tech-Stack
+## Features 
+- A User Console where users can connect and manage their social media profiles
+- A Social Dashboard where users can view and manage their social media profiles
+- Individual profile modules for Instagram, Facebook, and Twitter where users can filter posts by time and engagement (likes, views, retweets, comments, shares, replies, etc..)
 
-- a simple API for making calls to real phones or other clients
-- a full-featured modal view controller to allow your users to interact with the call
-- options to mute, switch to speakerphone, and send DTMF tones
-- a property to set the caller ID
-- a call record object containing useful information about a past call
-- useful helper methods on NSString for dealing with phone numbers
+## Tech-Stack
+- Realm Mobile Platform and Swift NSUserDefaults for post archiving
+- Facebook SDK, Twitter Kit, and Instagram API to fetch user information
+- Swift/Objective-C front-end with CocoaPods Dependency Manager
+- AlamoFire, SwiftyJSON, and Facebook Graph API to fetch profile content
 
 ## Task List
+- [x] Initialize Xcode Workspace with Cocoapods Dependency Manager
+- [x] Initialize Bridging Header to import UIKit and AlamoFire Libraries 
+- [ ] Integrate Facebook Login SDK to get user profile credentials
+- [ ] Integrate Twitter Kit to utilize Tweet functionality
+- [ ] Integrate Instagram API to utilize Instagram module
 
-- [ ] a task list item
-- [ ] list syntax required
-- [ ] normal **formatting**, @mentions, #1234 refs
-- [ ] incomplete
-- [x] completed
