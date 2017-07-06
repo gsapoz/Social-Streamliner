@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		064D09C21F0ED9B9009D9641 /* FacebookCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064D09BC1F0ED9B9009D9641 /* FacebookCore.framework */; };
+		064D09C31F0ED9B9009D9641 /* FacebookLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064D09BD1F0ED9B9009D9641 /* FacebookLogin.framework */; };
+		064D09C41F0ED9B9009D9641 /* FacebookShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064D09BE1F0ED9B9009D9641 /* FacebookShare.framework */; };
+		064D09C51F0ED9B9009D9641 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064D09BF1F0ED9B9009D9641 /* FBSDKCoreKit.framework */; };
+		064D09C61F0ED9B9009D9641 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064D09C01F0ED9B9009D9641 /* FBSDKLoginKit.framework */; };
+		064D09C71F0ED9B9009D9641 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064D09C11F0ED9B9009D9641 /* FBSDKShareKit.framework */; };
 		0674471D1F0EC9F000F65732 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0674471C1F0EC9F000F65732 /* AppDelegate.swift */; };
 		0674471F1F0EC9F000F65732 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0674471E1F0EC9F000F65732 /* ViewController.swift */; };
 		067447221F0EC9F000F65732 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 067447201F0EC9F000F65732 /* Main.storyboard */; };
@@ -16,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		064D09BB1F0ED322009D9641 /* SStreamliner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SStreamliner-Bridging-Header.h"; sourceTree = "<group>"; };
+		064D09BC1F0ED9B9009D9641 /* FacebookCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookCore.framework; path = "../../../Library/Developer/Xcode/DerivedData/SStreamliner-cefpvebzurpzineyuiifnxxywpym/Build/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework"; sourceTree = "<group>"; };
+		064D09BD1F0ED9B9009D9641 /* FacebookLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookLogin.framework; path = "../../../Library/Developer/Xcode/DerivedData/SStreamliner-cefpvebzurpzineyuiifnxxywpym/Build/Products/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework"; sourceTree = "<group>"; };
+		064D09BE1F0ED9B9009D9641 /* FacebookShare.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookShare.framework; path = "../../../Library/Developer/Xcode/DerivedData/SStreamliner-cefpvebzurpzineyuiifnxxywpym/Build/Products/Debug-iphonesimulator/FacebookShare/FacebookShare.framework"; sourceTree = "<group>"; };
+		064D09BF1F0ED9B9009D9641 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/SStreamliner-cefpvebzurpzineyuiifnxxywpym/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		064D09C01F0ED9B9009D9641 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/SStreamliner-cefpvebzurpzineyuiifnxxywpym/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		064D09C11F0ED9B9009D9641 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/SStreamliner-cefpvebzurpzineyuiifnxxywpym/Build/Products/Debug-iphonesimulator/FBSDKShareKit/FBSDKShareKit.framework"; sourceTree = "<group>"; };
 		067447191F0EC9F000F65732 /* SStreamliner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SStreamliner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0674471C1F0EC9F000F65732 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0674471E1F0EC9F000F65732 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,6 +46,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				064D09C21F0ED9B9009D9641 /* FacebookCore.framework in Frameworks */,
+				064D09C31F0ED9B9009D9641 /* FacebookLogin.framework in Frameworks */,
+				064D09C41F0ED9B9009D9641 /* FacebookShare.framework in Frameworks */,
+				064D09C51F0ED9B9009D9641 /* FBSDKCoreKit.framework in Frameworks */,
+				064D09C61F0ED9B9009D9641 /* FBSDKLoginKit.framework in Frameworks */,
+				064D09C71F0ED9B9009D9641 /* FBSDKShareKit.framework in Frameworks */,
 				69F9BD7DE0999286EE016EB2 /* Pods_SStreamliner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +82,7 @@
 			children = (
 				0674471C1F0EC9F000F65732 /* AppDelegate.swift */,
 				0674471E1F0EC9F000F65732 /* ViewController.swift */,
+				064D09BB1F0ED322009D9641 /* SStreamliner-Bridging-Header.h */,
 				067447201F0EC9F000F65732 /* Main.storyboard */,
 				067447231F0EC9F000F65732 /* Assets.xcassets */,
 				067447251F0EC9F000F65732 /* LaunchScreen.storyboard */,
@@ -74,6 +94,12 @@
 		D54F4489E8DD8E464C3405FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				064D09BC1F0ED9B9009D9641 /* FacebookCore.framework */,
+				064D09BD1F0ED9B9009D9641 /* FacebookLogin.framework */,
+				064D09BE1F0ED9B9009D9641 /* FacebookShare.framework */,
+				064D09BF1F0ED9B9009D9641 /* FBSDKCoreKit.framework */,
+				064D09C01F0ED9B9009D9641 /* FBSDKLoginKit.framework */,
+				064D09C11F0ED9B9009D9641 /* FBSDKShareKit.framework */,
 				E804074A640C545EFD1C2B88 /* Pods_SStreamliner.framework */,
 			);
 			name = Frameworks;
@@ -342,6 +368,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GaryS.SStreamliner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SStreamliner/SStreamliner-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -356,6 +383,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GaryS.SStreamliner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SStreamliner/SStreamliner-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -379,6 +407,7 @@
 				0674472D1F0EC9F000F65732 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
