@@ -1,24 +1,23 @@
 //
-//  UserConsoleVC.swift
+//  ProfileManager.swift
 //  SStreamliner
 //
-//  Created by GaryS on 7/6/17.
+//  Created by GaryS on 7/7/17.
 //  Copyright © 2017 Gary Sapozhnikov. All rights reserved.
 //
 
-
-class UserConsoleVC : UIViewController{
-
+class ProfileDashboardVC : UIViewController{
+    
     var tableView : UITableView!
-    let socialMediaIcons : [UIImage] = [#imageLiteral(resourceName: "facebook"), #imageLiteral(resourceName: "twitter"), #imageLiteral(resourceName: "instagram")]
+    let tableTitles : [String] = ["Facebook", "Twitter", "Instagram"]
     
     override public func viewDidLoad() {
         super.viewDidLoad()
         
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.barTintColor = UIColor.SSBlue
-        let settingsBtn = UIBarButtonItem(image: UIImage(named: "settings"), style: .plain, target: self, action:#selector(openSettings))
-        self.navigationItem.rightBarButtonItem  = settingsBtn
+//        let button1 = UIBarButtonItem(image: UIImage(named: "settings"), style: .plain, target: self, action:#selector(openSettings))
+//        self.navigationItem.leftBarButtonItem  = button1
         //self.navigationItem.leftBarButtonItem?.tintColor = UIColor.white
         self.navigationController?.navigationBar.tintColor = UIColor.white
         tableView = UITableView(frame: view.bounds, style: .plain)
@@ -26,30 +25,28 @@ class UserConsoleVC : UIViewController{
         tableView.delegate = self
         view.addSubview(tableView)
         
-        tableView.register(UINib(nibName: "ProfilePortalCell", bundle:nil), forCellReuseIdentifier: "portalCell")
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "TableViewCell")
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "CustomHeaderCell")
         
         //tableView.backgroundColor = UIColor.clear
         tableView.separatorInset = .zero
-        tableView.separatorStyle = .none
+        //tableView.separatorStyle = .none
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         scrollView.showsVerticalScrollIndicator = false
         //scrollView.contentSize = CGSize(width: view.bounds.width, height: view.bounds.height + 100)
     }
-   
-    func openSettings(){
-        let vc = ProfileDashboardVC()
-        self.navigationController?.pushViewController(vc, animated: true)
+    
+    func openConnectPage(){
+        // When user selects a certain cell, they should be taken to the corresponding login page where they can connect/disconnect their account
     }
-
+    
     
 }
 
-extension UserConsoleVC : UITableViewDataSource, UITableViewDelegate{
+extension ProfileDashboardVC : UITableViewDataSource, UITableViewDelegate{
     // MARK: - ScrollView Delegate
-    
     
     // MARK: - Table view data source
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -57,6 +54,13 @@ extension UserConsoleVC : UITableViewDataSource, UITableViewDelegate{
         return 1
     }
     
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row != 0{
+            openConnectPage()
+        }
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 4
@@ -64,50 +68,37 @@ extension UserConsoleVC : UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
-        switch indexPath.row{
-        case 3:
-            return 100.0
-        default:
-            return 260.0
+        if indexPath.row == 0{
+            return 22.0
+        }else{
+            return 60.0
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell")
+//        cell?.selectionStyle = .none
+//        cell?.textLabel?.text = tableTitles[indexPath.row]
+//        cell?.backgroundColor = UIColor.white
+//        
+//        return cell!
         switch indexPath.row{
-        case 3:
+        case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell")
             cell?.selectionStyle = .none
-            cell?.backgroundColor = UIColor.white
+            cell?.backgroundColor = UIColor.SSGray
+            cell?.textLabel?.text = "Manage Your Social Media Accounts"
+            cell?.textLabel?.font = UIFont.systemFont(ofSize: 13.0, weight: 0.8)
             return cell!
         default:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "portalCell", for: indexPath) as! ProfilePortalCell
-            cell.selectionStyle = .none
-            cell.socialIcon.image = socialMediaIcons[indexPath.row]
-            
-            
-            return cell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell")
+            cell?.selectionStyle = .none
+            cell?.textLabel?.text = tableTitles[indexPath.row - 1]
+            cell?.backgroundColor = UIColor.white
+            cell?.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
+            return cell!
         }
-        
     }
     
-
-}
-
-class ProfilePortalCell: UITableViewCell {
-    @IBOutlet weak var cellView: UIView!
-    @IBOutlet weak var ProfilePictureCell: UIImageView!
-    @IBOutlet weak var socialIcon: UIImageView!
-    @IBOutlet weak var ProfileUserName: UILabel!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
-    }
     
 }

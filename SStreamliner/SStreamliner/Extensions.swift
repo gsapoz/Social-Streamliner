@@ -11,6 +11,7 @@ extension UIColor{
 //        return UIColor(red: CGFloat(0.16), green: CGFloat(0.77), blue: CGFloat(0.81), alpha: CGFloat(1.0))
 //    }
     static let SSBlue = UIColor(red: CGFloat(0.16), green: CGFloat(0.77), blue: CGFloat(0.81), alpha: CGFloat(1.0))
+    static let SSGray = UIColor(red: 247/255, green: 247/255, blue: 247/255, alpha: 1)
 }
 
 
