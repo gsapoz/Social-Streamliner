@@ -18,7 +18,8 @@ Organize, filter, and streamline your social media profiles to sort out and remo
 - [x] Integrate Facebook Login SDK to get user profile credentials
 - [x] Integrate Twitter Kit to utilize Tweet functionality
 - [ ] Integrate Instagram API to utilize Instagram module
-- [ ] Design and Implement user console with each social media logins
+- [ ] Integrate RealmSwift to save each Social Media feed upon sign up
+- [x] Design and Implement user console with each social media logins
 - [ ] Design and Implement Social Dashboard with each profile feed
 - [ ] Design and Implement individual post views for each type of post (photo, tweet, check-in, etc..)
 - [ ] Design and Implement Activity Model to backup deleted posts just in case user wants to review them
