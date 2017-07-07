@@ -7,7 +7,7 @@ Organize, filter, and streamline your social media profiles to sort out and remo
 - Individual profile modules for Instagram, Facebook, and Twitter where users can filter posts by time and engagement (likes, views, retweets, comments, shares, replies, etc..)
 
 ## Tech-Stack
-- Realm Mobile Platform and Swift NSUserDefaults for post archiving
+- Realm Mobile Database and Swift NSUserDefaults for post archiving
 - Facebook SDK, Twitter Kit, and Instagram API to fetch user information
 - Swift/Objective-C front-end with CocoaPods Dependency Manager
 - AlamoFire, SwiftyJSON, and Facebook Graph API to fetch profile content
@@ -18,7 +18,7 @@ Organize, filter, and streamline your social media profiles to sort out and remo
 - [x] Integrate Facebook Login SDK to get user profile credentials
 - [x] Integrate Twitter Kit to utilize Tweet functionality
 - [x] Integrate Instagram API to utilize Instagram module
-- [ ] Integrate RealmSwift to save each Social Media feed upon sign up
+- [x] Integrate RealmSwift to save each Social Media feed upon sign up
 - [x] Design and Implement user console with each social media login
 - [ ] Design and Implement Social Dashboard with each profile feed
 - [ ] Design and Implement individual post views for each type of post (photo, tweet, check-in, etc..)
