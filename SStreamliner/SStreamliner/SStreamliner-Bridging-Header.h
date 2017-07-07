@@ -15,6 +15,11 @@
 #import <Alamofire/Alamofire-Swift.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+
+#import "ReactiveCocoa.h"
+#import "CMDQueryStringReader.h"
+#import "ISO8601.h"
+#import "SimpleAuth.h"
 #endif
 
 
