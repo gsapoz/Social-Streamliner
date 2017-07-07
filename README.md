@@ -24,7 +24,7 @@ Organize, filter, and streamline your social media profiles to sort out and remo
 - [ ] Design and Implement individual post views for each type of post (photo, tweet, check-in, etc..)
 - [ ] Design and Implement Activity Model to backup deleted posts just in case user wants to review them
 
-##Next Version 
+## Next Version 
 - [ ] Integrate Gmail to extend core features for inbox subscriptions
 - [ ] Integrate Contacts and Photo Libraries so Users can clean up space on their Phone
 
