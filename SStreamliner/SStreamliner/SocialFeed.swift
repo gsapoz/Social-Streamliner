@@ -1,16 +1,15 @@
 //
-//  UserConsole.swift
+//  SocialFeed.swift
 //  SStreamliner
 //
-//  Created by GaryS on 7/6/17.
+//  Created by GaryS on 7/7/17.
 //  Copyright © 2017 Gary Sapozhnikov. All rights reserved.
 //
 
-
-class UserConsoleVC : UIViewController{
-
+class SocialFeedVC : UIViewController{
+    
     var tableView : UITableView!
-    let socialMediaIcons : [UIImage] = [#imageLiteral(resourceName: "facebook"), #imageLiteral(resourceName: "twitter"), #imageLiteral(resourceName: "instagram")]
+    let postIcon : [UIImage] = [#imageLiteral(resourceName: "writtenPost"), #imageLiteral(resourceName: "videoPost"), #imageLiteral(resourceName: "writtenPost")]
     
     override public func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +25,7 @@ class UserConsoleVC : UIViewController{
         tableView.delegate = self
         view.addSubview(tableView)
         
-        tableView.register(UINib(nibName: "ProfilePortalCell", bundle:nil), forCellReuseIdentifier: "portalCell")
+        tableView.register(UINib(nibName: "SocialPostCell", bundle:nil), forCellReuseIdentifier: "postCell")
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "TableViewCell")
         
         //tableView.backgroundColor = UIColor.clear
@@ -38,16 +37,18 @@ class UserConsoleVC : UIViewController{
         scrollView.showsVerticalScrollIndicator = false
         //scrollView.contentSize = CGSize(width: view.bounds.width, height: view.bounds.height + 100)
     }
-   
+    
     func openSettings(){
         let vc = ProfileDashboardVC()
         self.navigationController?.pushViewController(vc, animated: true)
     }
-
+    
     
 }
 
-extension UserConsoleVC : UITableViewDataSource, UITableViewDelegate{
+extension SocialFeedVC : UITableViewDataSource, UITableViewDelegate{
+    // MARK: - ScrollView Delegate
+    
     
     // MARK: - Table view data source
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -57,50 +58,43 @@ extension UserConsoleVC : UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 4
+        return 50
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
         switch indexPath.row{
-        case 3:
+        case 49:
             return 100.0
         default:
-            return 260.0
+            return 110.0
         }
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = SocialFeedVC()
-        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row{
-        case 3:
+        case 49:
             let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell")
             cell?.selectionStyle = .none
             cell?.backgroundColor = UIColor.white
             return cell!
         default:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "portalCell", for: indexPath) as! ProfilePortalCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! SocialPostCell
             cell.selectionStyle = .none
-            cell.socialIcon.image = socialMediaIcons[indexPath.row]
-            cell.ProfileUserName.text = "No Account Connected"
-            
+            //cell.socialIcon.image = socialMediaIcons[indexPath.row]
+            cell.thumbnail.image = postIcon[2]
             return cell
         }
         
     }
     
-
+    
 }
 
-class ProfilePortalCell: UITableViewCell {
-    @IBOutlet weak var cellView: UIView!
-    @IBOutlet weak var ProfilePictureCell: UIImageView!
-    @IBOutlet weak var socialIcon: UIImageView!
-    @IBOutlet weak var ProfileUserName: UILabel!
+
+class SocialPostCell: UITableViewCell {
+    
+    @IBOutlet weak var thumbnail: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -112,5 +106,6 @@ class ProfilePortalCell: UITableViewCell {
         
         // Configure the view for the selected state
     }
+    
     
 }

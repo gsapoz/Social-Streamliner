@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		061ED2381F0EE9E1000B2FAA /* UserConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061ED2371F0EE9E1000B2FAA /* UserConsole.swift */; };
-		061ED2411F0EEC26000B2FAA /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061ED2401F0EEC26000B2FAA /* ProfileModel.swift */; };
+		061ED2411F0EEC26000B2FAA /* InstagramModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061ED2401F0EEC26000B2FAA /* InstagramModel.swift */; };
 		061ED2431F0EEC43000B2FAA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061ED2421F0EEC43000B2FAA /* Extensions.swift */; };
 		061ED24F1F0F13F6000B2FAA /* ProfilePortalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 061ED24D1F0F13F6000B2FAA /* ProfilePortalCell.xib */; };
 		061ED2511F0F51CC000B2FAA /* ProfileDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061ED2501F0F51CC000B2FAA /* ProfileDashboard.swift */; };
@@ -131,6 +131,8 @@
 		065FF3741F10068A008B38F2 /* UITextField+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 065FF3191F10068A008B38F2 /* UITextField+RACSignalSupport.m */; };
 		065FF3751F10068A008B38F2 /* UITextView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 065FF31B1F10068A008B38F2 /* UITextView+RACSignalSupport.m */; };
 		065FF37C1F10069E008B38F2 /* EXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 065FF3791F10069E008B38F2 /* EXTRuntimeExtensions.m */; };
+		065FF3801F1042A7008B38F2 /* SocialPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 065FF37E1F1042A7008B38F2 /* SocialPostCell.xib */; };
+		065FF3821F1042F3008B38F2 /* SocialFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065FF3811F1042F3008B38F2 /* SocialFeed.swift */; };
 		0674471D1F0EC9F000F65732 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0674471C1F0EC9F000F65732 /* AppDelegate.swift */; };
 		067447221F0EC9F000F65732 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 067447201F0EC9F000F65732 /* Main.storyboard */; };
 		067447241F0EC9F000F65732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 067447231F0EC9F000F65732 /* Assets.xcassets */; };
@@ -140,7 +142,7 @@
 
 /* Begin PBXFileReference section */
 		061ED2371F0EE9E1000B2FAA /* UserConsole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserConsole.swift; sourceTree = "<group>"; };
-		061ED2401F0EEC26000B2FAA /* ProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		061ED2401F0EEC26000B2FAA /* InstagramModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramModel.swift; sourceTree = "<group>"; };
 		061ED2421F0EEC43000B2FAA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		061ED24D1F0F13F6000B2FAA /* ProfilePortalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfilePortalCell.xib; sourceTree = "<group>"; };
 		061ED2501F0F51CC000B2FAA /* ProfileDashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDashboard.swift; sourceTree = "<group>"; };
@@ -385,6 +387,8 @@
 		065FF3791F10069E008B38F2 /* EXTRuntimeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EXTRuntimeExtensions.m; path = "SimpleAuth/Objective-C/extobjc/EXTRuntimeExtensions.m"; sourceTree = "<group>"; };
 		065FF37A1F10069E008B38F2 /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXTScope.h; path = "SimpleAuth/Objective-C/extobjc/EXTScope.h"; sourceTree = "<group>"; };
 		065FF37B1F10069E008B38F2 /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = metamacros.h; path = "SimpleAuth/Objective-C/extobjc/metamacros.h"; sourceTree = "<group>"; };
+		065FF37E1F1042A7008B38F2 /* SocialPostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocialPostCell.xib; sourceTree = "<group>"; };
+		065FF3811F1042F3008B38F2 /* SocialFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialFeed.swift; sourceTree = "<group>"; };
 		067447191F0EC9F000F65732 /* SStreamliner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SStreamliner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0674471C1F0EC9F000F65732 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		067447211F0EC9F000F65732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -417,7 +421,7 @@
 		061ED2391F0EE9E9000B2FAA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				061ED2401F0EEC26000B2FAA /* ProfileModel.swift */,
+				061ED2401F0EEC26000B2FAA /* InstagramModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -426,6 +430,7 @@
 			isa = PBXGroup;
 			children = (
 				061ED24D1F0F13F6000B2FAA /* ProfilePortalCell.xib */,
+				065FF37E1F1042A7008B38F2 /* SocialPostCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -435,6 +440,7 @@
 			children = (
 				061ED2371F0EE9E1000B2FAA /* UserConsole.swift */,
 				061ED2501F0F51CC000B2FAA /* ProfileDashboard.swift */,
+				065FF3811F1042F3008B38F2 /* SocialFeed.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -451,6 +457,8 @@
 			isa = PBXGroup;
 			children = (
 				067447231F0EC9F000F65732 /* Assets.xcassets */,
+				067447201F0EC9F000F65732 /* Main.storyboard */,
+				067447251F0EC9F000F65732 /* LaunchScreen.storyboard */,
 				064D09BB1F0ED322009D9641 /* SStreamliner-Bridging-Header.h */,
 				0674471C1F0EC9F000F65732 /* AppDelegate.swift */,
 				067447281F0EC9F000F65732 /* Info.plist */,
@@ -822,8 +830,6 @@
 				061ED2391F0EE9E9000B2FAA /* Model */,
 				061ED23A1F0EE9EF000B2FAA /* View */,
 				061ED23B1F0EE9F3000B2FAA /* Controller */,
-				067447201F0EC9F000F65732 /* Main.storyboard */,
-				067447251F0EC9F000F65732 /* LaunchScreen.storyboard */,
 			);
 			path = SStreamliner;
 			sourceTree = "<group>";
@@ -916,6 +922,7 @@
 			files = (
 				065FF2451F100594008B38F2 /* Localizable.strings in Resources */,
 				067447271F0EC9F000F65732 /* LaunchScreen.storyboard in Resources */,
+				065FF3801F1042A7008B38F2 /* SocialPostCell.xib in Resources */,
 				061ED24F1F0F13F6000B2FAA /* ProfilePortalCell.xib in Resources */,
 				067447241F0EC9F000F65732 /* Assets.xcassets in Resources */,
 				067447221F0EC9F000F65732 /* Main.storyboard in Resources */,
@@ -1000,6 +1007,7 @@
 				065FF3561F10068A008B38F2 /* RACStream.m in Sources */,
 				065FF3381F10068A008B38F2 /* RACCompoundDisposableProvider.d in Sources */,
 				065FF23A1F100542008B38F2 /* Atomic.swift in Sources */,
+				065FF3821F1042F3008B38F2 /* SocialFeed.swift in Sources */,
 				065FF3491F10068A008B38F2 /* RACMulticastConnection.m in Sources */,
 				065FF34A1F10068A008B38F2 /* RACPassthroughSubscriber.m in Sources */,
 				065FF33C1F10068A008B38F2 /* RACDynamicSequence.m in Sources */,
@@ -1057,7 +1065,7 @@
 				065FF33F1F10068A008B38F2 /* RACEmptySequence.m in Sources */,
 				065FF34D1F10068A008B38F2 /* RACReturnSignal.m in Sources */,
 				065FF3421F10068A008B38F2 /* RACEvent.m in Sources */,
-				061ED2411F0EEC26000B2FAA /* ProfileModel.swift in Sources */,
+				061ED2411F0EEC26000B2FAA /* InstagramModel.swift in Sources */,
 				065FF32B1F10068A008B38F2 /* NSOrderedSet+RACSequenceAdditions.m in Sources */,
 				065FF3651F10068A008B38F2 /* UIBarButtonItem+RACCommandSupport.m in Sources */,
 				065FF36F1F10068A008B38F2 /* UISlider+RACSignalSupport.m in Sources */,
