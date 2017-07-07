@@ -11,7 +11,7 @@ target 'SStreamliner' do
   pod 'FacebookLogin'
   pod 'FacebookShare'
   pod 'TwitterKit'
-
+  pod 'RealmSwift'
   # Pods for SStreamliner
 
 end
